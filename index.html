@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vi — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --base: #201E33;
+    --surface: #2A2740;
+    --text: #ECEAF2;
+    --muted: #9A95B5;
+    --line: #3A3654;
+    --accent: #C9C2E8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--base);
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 24px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 0 96px; }
+
+  /* language switcher */
+  .langbar {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+  .langbar button {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    padding: 7px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .langbar button:hover { color: var(--text); border-color: var(--muted); }
+  .langbar button.active {
+    color: var(--base);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .langbar button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .brand {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    padding-left: 0.5em;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+  }
+  .date {
+    text-align: center;
+    color: var(--muted);
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 56px;
+  }
+  section { margin-bottom: 32px; }
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  .num {
+    font-style: italic;
+    color: var(--muted);
+    margin-right: 8px;
+    font-weight: 400;
+  }
+  p { color: var(--text); }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  a:hover { border-bottom-color: var(--accent); }
+  .callout {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 18px 22px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  .lang { display: none; }
+  .lang.active { display: block; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar" role="group" aria-label="Language">
+    <button data-lang="uk" class="active">Українська</button>
+    <button data-lang="en">English</button>
+    <button data-lang="ru">Русский</button>
+    <button data-lang="es">Español</button>
+  </div>
+
+  <!-- UKRAINIAN -->
+  <div class="lang active" data-lang="uk" lang="uk">
+    <div class="brand">Vi</div>
+    <h1>Політика конфіденційності</h1>
+    <p class="date">Дата набрання чинності: 30 червня 2026</p>
+
+    <section><h2><span class="num">1</span>Головний принцип</h2>
+    <p>Vi — застосунок для особистих розмов і біографічних нотаток. Він побудований на одному принципі: ваші дані належать тільки вам. Vi працює без акаунта й не збирає персональних даних.</p></section>
+
+    <section><h2><span class="num">2</span>Де зберігаються ваші дані</h2>
+    <p>Усі ваші розмови та ваш портрет зберігаються виключно на вашому пристрої, у приватному сховищі застосунку. Вони не зберігаються в хмарі, не синхронізуються й нікуди не передаються автоматично. Ми не маємо до них доступу.</p></section>
+
+    <section><h2><span class="num">3</span>Що залишає ваш пристрій</h2>
+    <p>Щоб Vi міг відповісти, текст вашого повідомлення надсилається через проміжний сервіс до постачальника штучного інтелекту (Anthropic), який обробляє його для генерації відповіді. Проміжний сервіс не зберігає ваших повідомлень. Anthropic не зберігає вміст розмов після обробки. Детальніше: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p></section>
+
+    <section><h2><span class="num">4</span>Надсилання даних на власну пошту</h2>
+    <p>Vi дозволяє вам самостійно надіслати свої дані — розмови та портрет — на власну електронну адресу, натисканням кнопки в застосунку. Це єдиний спосіб, у який ваші дані залишають пристрій за вашим бажанням. Ви самі контролюєте цю дію та куди надсилаються дані. Vi не зберігає копій і не має доступу до надісланого.</p></section>
+
+    <section><h2><span class="num">5</span>Важливо: дані лише на пристрої</h2>
+    <div class="callout"><p>Оскільки дані зберігаються лише на вашому пристрої, видалення застосунку або втрата пристрою призведе до безповоротної втрати вашої історії. Щоб зберегти дані, скористайтеся надсиланням на власну пошту (розділ 4).</p></div></section>
+
+    <section><h2><span class="num">6</span>Дозволи</h2>
+    <p>Vi не використовує мікрофон, камеру, геолокацію чи доступ до контактів.</p></section>
+
+    <section><h2><span class="num">7</span>Аналітика й реклама</h2>
+    <p>Vi не використовує аналітичних сервісів, не показує реклами й не відстежує вашої поведінки. Жодних сторонніх трекерів.</p></section>
+
+    <section><h2><span class="num">8</span>Ваші права</h2>
+    <p>Ми не продаємо, не передаємо й не монетизуємо ваші дані жодним чином. Ви повністю контролюєте свої дані: вони на вашому пристрої, і ви можете видалити їх будь-коли, видаливши застосунок.</p></section>
+
+    <section><h2><span class="num">9</span>Діти</h2>
+    <p>Vi не призначений для осіб віком до 13 років.</p></section>
+
+    <section><h2><span class="num">10</span>Зміни</h2>
+    <p>Ми можемо оновлювати цю політику. Про зміни повідомлятимемо через оновлення застосунку.</p></section>
+
+    <section><h2><span class="num">11</span>Контакт</h2>
+    <p>Питання щодо конфіденційності: <a href="mailto:viapp.official@gmail.com">viapp.official@gmail.com</a></p></section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="lang" data-lang="en" lang="en">
+    <div class="brand">Vi</div>
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: June 30, 2026</p>
+
+    <section><h2><span class="num">1</span>Core principle</h2>
+    <p>Vi is an app for personal conversations and biographical notes. It is built on one principle: your data belongs to you alone. Vi works without an account and does not collect personal data.</p></section>
+
+    <section><h2><span class="num">2</span>Where your data is stored</h2>
+    <p>All your conversations and your portrait are stored solely on your device, in the app's private storage. They are not stored in the cloud, not synced, and not transmitted anywhere automatically. We have no access to them.</p></section>
+
+    <section><h2><span class="num">3</span>What leaves your device</h2>
+    <p>For Vi to respond, the text of your message is sent through an intermediary service to the AI provider (Anthropic), which processes it to generate a reply. The intermediary service does not store your messages. Anthropic does not retain conversation content after processing. Learn more: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p></section>
+
+    <section><h2><span class="num">4</span>Sending data to your own email</h2>
+    <p>Vi lets you send your own data — conversations and portrait — to your own email address, by pressing a button in the app. This is the only way your data leaves the device, and only when you choose. You control this action and where the data is sent. Vi keeps no copies and has no access to what you send.</p></section>
+
+    <section><h2><span class="num">5</span>Important: data lives only on your device</h2>
+    <div class="callout"><p>Because data is stored only on your device, deleting the app or losing the device will permanently erase your history. To preserve your data, use the send-to-email feature (section 4).</p></div></section>
+
+    <section><h2><span class="num">6</span>Permissions</h2>
+    <p>Vi does not use the microphone, camera, location, or access to your contacts.</p></section>
+
+    <section><h2><span class="num">7</span>Analytics and ads</h2>
+    <p>Vi uses no analytics services, shows no ads, and does not track your behavior. No third-party trackers.</p></section>
+
+    <section><h2><span class="num">8</span>Your rights</h2>
+    <p>We do not sell, share, or monetize your data in any way. You have full control of your data: it lives on your device, and you can delete it at any time by uninstalling the app.</p></section>
+
+    <section><h2><span class="num">9</span>Children</h2>
+    <p>Vi is not intended for persons under the age of 13.</p></section>
+
+    <section><h2><span class="num">10</span>Changes</h2>
+    <p>We may update this policy. We will notify you of changes through an app update.</p></section>
+
+    <section><h2><span class="num">11</span>Contact</h2>
+    <p>Privacy questions: <a href="mailto:viapp.official@gmail.com">viapp.official@gmail.com</a></p></section>
+  </div>
+
+  <!-- RUSSIAN -->
+  <div class="lang" data-lang="ru" lang="ru">
+    <div class="brand">Vi</div>
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Дата вступления в силу: 30 июня 2026</p>
+
+    <section><h2><span class="num">1</span>Главный принцип</h2>
+    <p>Vi — приложение для личных разговоров и биографических заметок. Оно построено на одном принципе: ваши данные принадлежат только вам. Vi работает без аккаунта и не собирает персональных данных.</p></section>
+
+    <section><h2><span class="num">2</span>Где хранятся ваши данные</h2>
+    <p>Все ваши разговоры и ваш портрет хранятся исключительно на вашем устройстве, в приватном хранилище приложения. Они не хранятся в облаке, не синхронизируются и никуда не передаются автоматически. У нас нет к ним доступа.</p></section>
+
+    <section><h2><span class="num">3</span>Что покидает ваше устройство</h2>
+    <p>Чтобы Vi мог ответить, текст вашего сообщения отправляется через промежуточный сервис к поставщику искусственного интеллекта (Anthropic), который обрабатывает его для генерации ответа. Промежуточный сервис не хранит ваших сообщений. Anthropic не сохраняет содержимое разговоров после обработки. Подробнее: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p></section>
+
+    <section><h2><span class="num">4</span>Отправка данных на собственную почту</h2>
+    <p>Vi позволяет вам самостоятельно отправить свои данные — разговоры и портрет — на собственный адрес электронной почты, нажатием кнопки в приложении. Это единственный способ, которым ваши данные покидают устройство, и только по вашему желанию. Вы сами контролируете это действие и то, куда отправляются данные. Vi не хранит копий и не имеет доступа к отправленному.</p></section>
+
+    <section><h2><span class="num">5</span>Важно: данные только на устройстве</h2>
+    <div class="callout"><p>Поскольку данные хранятся только на вашем устройстве, удаление приложения или потеря устройства приведут к безвозвратной потере вашей истории. Чтобы сохранить данные, воспользуйтесь отправкой на собственную почту (раздел 4).</p></div></section>
+
+    <section><h2><span class="num">6</span>Разрешения</h2>
+    <p>Vi не использует микрофон, камеру, геолокацию или доступ к контактам.</p></section>
+
+    <section><h2><span class="num">7</span>Аналитика и реклама</h2>
+    <p>Vi не использует аналитических сервисов, не показывает рекламы и не отслеживает ваше поведение. Никаких сторонних трекеров.</p></section>
+
+    <section><h2><span class="num">8</span>Ваши права</h2>
+    <p>Мы не продаём, не передаём и не монетизируем ваши данные никаким образом. Вы полностью контролируете свои данные: они на вашем устройстве, и вы можете удалить их в любой момент, удалив приложение.</p></section>
+
+    <section><h2><span class="num">9</span>Дети</h2>
+    <p>Vi не предназначен для лиц младше 13 лет.</p></section>
+
+    <section><h2><span class="num">10</span>Изменения</h2>
+    <p>Мы можем обновлять эту политику. Об изменениях сообщим через обновление приложения.</p></section>
+
+    <section><h2><span class="num">11</span>Контакт</h2>
+    <p>Вопросы о конфиденциальности: <a href="mailto:viapp.official@gmail.com">viapp.official@gmail.com</a></p></section>
+  </div>
+
+  <!-- SPANISH -->
+  <div class="lang" data-lang="es" lang="es">
+    <div class="brand">Vi</div>
+    <h1>Política de privacidad</h1>
+    <p class="date">Fecha de entrada en vigor: 30 de junio de 2026</p>
+
+    <section><h2><span class="num">1</span>Principio fundamental</h2>
+    <p>Vi es una aplicación para conversaciones personales y notas biográficas. Está construida sobre un principio: tus datos te pertenecen solo a ti. Vi funciona sin cuenta y no recopila datos personales.</p></section>
+
+    <section><h2><span class="num">2</span>Dónde se almacenan tus datos</h2>
+    <p>Todas tus conversaciones y tu retrato se almacenan únicamente en tu dispositivo, en el almacenamiento privado de la aplicación. No se guardan en la nube, no se sincronizan y no se transmiten a ningún lugar de forma automática. No tenemos acceso a ellos.</p></section>
+
+    <section><h2><span class="num">3</span>Qué sale de tu dispositivo</h2>
+    <p>Para que Vi pueda responder, el texto de tu mensaje se envía a través de un servicio intermediario al proveedor de inteligencia artificial (Anthropic), que lo procesa para generar una respuesta. El servicio intermediario no almacena tus mensajes. Anthropic no conserva el contenido de las conversaciones tras el procesamiento. Más información: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p></section>
+
+    <section><h2><span class="num">4</span>Envío de datos a tu propio correo</h2>
+    <p>Vi te permite enviar tus propios datos — conversaciones y retrato — a tu propia dirección de correo electrónico, pulsando un botón en la aplicación. Esta es la única forma en que tus datos salen del dispositivo, y solo cuando tú lo decides. Tú controlas esta acción y a dónde se envían los datos. Vi no guarda copias ni tiene acceso a lo que envías.</p></section>
+
+    <section><h2><span class="num">5</span>Importante: los datos solo están en tu dispositivo</h2>
+    <div class="callout"><p>Como los datos se almacenan solo en tu dispositivo, eliminar la aplicación o perder el dispositivo borrará tu historial de forma permanente. Para conservar tus datos, utiliza el envío a tu propio correo (sección 4).</p></div></section>
+
+    <section><h2><span class="num">6</span>Permisos</h2>
+    <p>Vi no utiliza el micrófono, la cámara, la ubicación ni el acceso a tus contactos.</p></section>
+
+    <section><h2><span class="num">7</span>Analítica y publicidad</h2>
+    <p>Vi no utiliza servicios de analítica, no muestra publicidad y no rastrea tu comportamiento. Sin rastreadores de terceros.</p></section>
+
+    <section><h2><span class="num">8</span>Tus derechos</h2>
+    <p>No vendemos, compartimos ni monetizamos tus datos de ninguna manera. Tienes el control total de tus datos: están en tu dispositivo y puedes eliminarlos en cualquier momento desinstalando la aplicación.</p></section>
+
+    <section><h2><span class="num">9</span>Menores</h2>
+    <p>Vi no está destinado a personas menores de 13 años.</p></section>
+
+    <section><h2><span class="num">10</span>Cambios</h2>
+    <p>Podemos actualizar esta política. Te notificaremos los cambios mediante una actualización de la aplicación.</p></section>
+
+    <section><h2><span class="num">11</span>Contacto</h2>
+    <p>Preguntas sobre privacidad: <a href="mailto:viapp.official@gmail.com">viapp.official@gmail.com</a></p></section>
+  </div>
+
+  <footer>Vi</footer>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.langbar button');
+  const panels = document.querySelectorAll('.lang');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.lang === lang));
+      document.documentElement.lang = lang;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
